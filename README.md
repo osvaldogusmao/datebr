@@ -10,7 +10,7 @@ Este bundle ajuda a converter datas em formato BR (Brasil) para o formato padrã
 Instalando usando o Artisan.
 
 ```
-php artisan bundle:install dateBR
+php artisan bundle:install datebr
 ```  
 Ou você pode baixar e inclui-lo na sua pastas de bundles: ``app/bundles``  
 
