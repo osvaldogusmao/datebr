@@ -17,7 +17,7 @@ Ou você pode baixar e inclui-lo na sua pastas de bundles: ``app/bundles``
 E no arquivo ``application/bundles.php`` adicionar a seguinte linha:
 
 ```php
-'dateBR' => array('auto' => true),
+'datebr' => array('auto' => true),
 ```
 
 ## Exemplos ##
