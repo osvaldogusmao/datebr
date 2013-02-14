@@ -1,4 +1,4 @@
-# DateBR Bundle parao Framework php Laravel #
+# DateBR Bundle para o Framework php Laravel #
 
 Este bundle ajuda a converter datas em formato BR (Brasil) para o formato padrão em Banco de Dados.
 
