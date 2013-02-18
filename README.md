@@ -1,8 +1,8 @@
-# DateBR Bundle para o Framework php Laravel #
+# DateBR Bundle para o conversão de datas no Framework Laravel #
 
 Este bundle ajuda a converter datas em formato BR (Brasil) para o formato padrão em Banco de Dados.
 
-## Contribuições:
+## Colaboradores ##
 Benício Ribeiro da Paixão Júnior - http://github.com/larsurilch
 
 ## Funções ##
