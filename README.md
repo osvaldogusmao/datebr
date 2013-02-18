@@ -2,8 +2,13 @@
 
 Este bundle ajuda a converter datas em formato BR (Brasil) para o formato padrão em Banco de Dados.
 
+## Contribuições:
+Benício Ribeiro da Paixão Júnior - http://github.com/larsurilch
+
 ## Funções ##
 - Converter data no formato BR (Brasil) para o formato padrão do Mysql. Exemplo: '18/03/1988' => '1988-03-18'
+- Converter data para exibição (View) - Completo (date)     : '1988-03-18' => '18/03/1988'
+- Converter data e hora para exibição (View) - (datetime)   : '1988-03-18 16:27:10' => '18/03/1988 - 16:27:10'
 
 ## Instalação ##
 
@@ -27,5 +32,9 @@ E no arquivo ``application/bundles.php`` adicionar a seguinte linha:
 
 // Conversão
 $date = DateBR::toMysql('18/03/1988'); // '1988-03-18'
+
+$date = DateBR::toView('1988-03-18', 'date'); // '18/03/1988'
+
+$date = DateBR::toView('1988-03-18 16:27:10', 'datetime'); // '18/03/1988 - 16:27:10'
 
 ```
