@@ -10,6 +10,11 @@
 
 class DateBR{
 
+	protected $formatos = array(
+		'datetime' => 'd/m/Y - H:i:s',
+		'date'     => 'd/m/Y',
+	);
+
 	public static function toMysql($value){
 
 		$date = explode('/',$value);
@@ -18,5 +23,13 @@ class DateBR{
 
 		return $dateFormat;
 	}
-
+	
+	public function toView($value, $formato){
+		
+		if(in_array($formato, array_keys($this->formatos))){
+			return date($this->formatos[$formato], strtotime($value));
+		}else{
+			echo false;
+		}
+	}
 }
