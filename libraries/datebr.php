@@ -24,7 +24,7 @@ class DateBR{
 		return $dateFormat;
 	}
 	
-	public function toView($value, $formato){
+	public static function toView($value, $formato){
 		
 		if(in_array($formato, array_keys($this->formatos))){
 			return date($this->formatos[$formato], strtotime($value));
