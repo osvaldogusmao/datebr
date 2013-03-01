@@ -10,7 +10,7 @@
 
 class DateBR{
 
-	protected $formatos = array(
+	protected static $formatos = array(
 		'datetime' => 'd/m/Y - H:i:s',
 		'date'     => 'd/m/Y',
 	);
@@ -25,11 +25,12 @@ class DateBR{
 	}
 	
 	public static function toView($value, $formato){
-		
-		if(in_array($formato, array_keys($this->formatos))){
-			return date($this->formatos[$formato], strtotime($value));
+
+		if(in_array($formato, array_keys(DateBR::$formatos))){
+			return date(DateBR::$formatos[$formato], strtotime($value));
 		}else{
-			echo false;
+			return false;
 		}
+
 	}
 }
